@@ -109,6 +109,7 @@ fi
 # Syncronisation vers le serveur configuré
 # --info-progress2 permet de ne pas avoir une progression pour chaque fichier
 # Changez cette valeur à "--info-progress1" est l'équivalent de --show-progress
+# Si aucune sauvegarde distante n'est voulue, simplement commenter ces 3 lignes
 echo -e "${YELLOW}Syncronisation vers le serveur ${RESET}${ServerIP}"
 rsync -rt --info=progress2 --ignore-existing "${LocalMusicPath}/" "${USER}@${ServerIP}:${ServerPath}/"
 echo -e "${GREEN}Transfert terminé !${RESET}"
