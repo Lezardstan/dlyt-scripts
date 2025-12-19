@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Script pour sourcer toutes les variables nécéssaires aux différents scripts
+
 # Les dossiers de téléchargement par défaut.
 audiopath="/home/$USER/mdl/"
 videopath="/home/$USER/vdl/"
@@ -24,7 +26,7 @@ temppath="/home/$USER/temp"
 LOGS="/tmp/tri_musique.log"
 
 #Celui ci est spécifique à tracknumber.sh:
-logfile="/tmp/conversions.logs"
+logfile="/tmp/conversions.log"
 
 # Pour les jolies couleurs
 RED='\033[31m'
