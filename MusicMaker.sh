@@ -4,7 +4,7 @@
 # Paquets en dépendances:
 #   rsync
 #   mediainfo
-#   ytdl
+#   yt-dl
 # Les script suivants doivent être executables et trouvables par ce script.
 #   ytdl.sh
 #   tracknumber.sh
