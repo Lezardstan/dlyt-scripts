@@ -28,6 +28,7 @@ function download_single() {
     if [ "$video_choice" = "n" ] || [ "$video_choice" = "N" ]; then
         yt-dlp \
             --output "${audiopath}%(playlist_index)02d - %(title)s.%(ext)s" \
+            --parse-metadata "%(uploader|)s:%(album_artist)s" \
             --embed-metadata \
             --add-metadata \
             --extract-audio \
