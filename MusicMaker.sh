@@ -57,7 +57,7 @@ for file in "$temppath"/*; do
 
   EXT="${file##*.}"
 
-  ARTISTE=$(mediainfo --Inform="General;%Performer%" "$file")
+  ARTISTE=$(mediainfo --Inform="General;%Album/Performer%" "$file")
   ALBUM=$(mediainfo --Inform="General;%Album%" "$file")
   TITRE=$(mediainfo --Inform="General;%Title%" "$file")
 
