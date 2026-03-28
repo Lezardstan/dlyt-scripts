@@ -2,17 +2,14 @@
 
 
 #### autodl.sh
-
 Script de téléchargement, conversion et organisation des fichiers sur le serveur.
 
 
 #### webhook.py
-
 Service HTTP minimal qui reçoit les requêtes et déclenche le script de téléchargement.
 
 
 #### webhook-yt-dl.service
-
 Service systemd pour faire tourner le webhook en permanence.
 
 
@@ -28,8 +25,7 @@ Script pour sourcer les variables de MusicMaker.sh
 Utilise les deux premiers chiffres du titre d'une musique en .flac et rajoute le numéro de la piste dans les métadonnées
 
 
- ### ytdl.sh
-
+#### ytdl.sh
 Script simple pour téléchargement de vidéos et musiques Youtube/Youtube Music 
 Paramétré pour la meilleure qualité disponible (en .flac)
 
