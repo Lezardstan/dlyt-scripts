@@ -30,18 +30,19 @@ Script simple pour téléchargement de vidéos et musiques Youtube/Youtube Music
 Paramétré pour la meilleure qualité disponible (en .flac)
 
 ### notifications.sh
-
 Contient des fonctions pour créer des appels via cURL vers le serveur ntfy
 
 --- 
 
 # Stacks manuel depuis Desktop
-tydl.sh + tracknumber.sh + mmvar.sh + MusicMaker.sh
+tydl.sh + tracknumber.sh + mmvar.sh + MusicMaker.sh + notifications.sh
 
 Voir scripts individuels
 
+---
+
 # Stack Automatique
-autodl.sh + webhook.py + webhook-yt-dl.service sur le serveur Navidrome:
+autodl.sh + notifications.sh + webhook.py + webhook-yt-dl.service sur le serveur Navidrome:
 
 **Flux d'une requête :**
 ```
