@@ -1,0 +1,13 @@
+[Unit]
+Description=Webhook téléchargement YT Music
+After=network.target
+
+[Service]
+User=
+WorkingDirectory=YOUR/WORKING/DIRECTORY
+Environment="DL_TOKEN=TON_TOKEN_SECRET_ICI"
+ExecStart=/usr/bin/python3 /PATH/TO/Webhook.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
