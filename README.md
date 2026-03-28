@@ -43,6 +43,8 @@ Paramétré pour la meilleure qualité disponible (en .flac)
 ### Stacks:
 tydl.sh + tracknumber.sh + mmvar.sh + MusicMaker.sh sur Desktop
 ou
+
+
 autodl.sh + webhook.py + webhook-yt-dl.service sur le serveur Navidrome:
 
 **Flux d'une requête :**
