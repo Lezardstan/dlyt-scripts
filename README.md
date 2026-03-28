@@ -40,7 +40,7 @@ Paramétré pour la meilleure qualité disponible (en .flac)
 
 --- 
 
-### Stacks:
+## Stacks:
 tydl.sh + tracknumber.sh + mmvar.sh + MusicMaker.sh sur Desktop
 ou
 
@@ -55,7 +55,7 @@ Téléphone (HTTP Shortcuts)
       → autodl.sh (yt-dlp + ffmpeg + mediainfo)
         → ~/navidrome/music (surveillé par Navidrome)
 ```
-#### Dépendances:
+## Dépendances:
 python3 python3-flask mediainfo ffmpeg
 
 yt-dlp (version à jour, hors dépôts Debian)
@@ -66,12 +66,7 @@ sudo wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /u
 sudo chmod +x /usr/local/bin/yt-dlp
 ```
 
-Update yt-dl:
-```bash
-sudo yt-dlp -U
-```
-### Concernant autodl.sh:
-- **Le verrou `/tmp/autodl.lock`** empêche deux téléchargements simultanés. S'il reste bloqué après un crash : `rm /tmp/autodl.lock`.
+
 
 ## Application mobile — HTTP Shortcuts (Android)
 
@@ -86,8 +81,15 @@ sudo yt-dlp -U
 
 **Utilisation :** depuis YT Music, Partager → HTTP Shortcuts → sélectionner le raccourci.
 
+## Maintenance:
 Suivre les logs en temps réel :
 ```bash
 tail -f /var/log/autodl.log
 journalctl -u webhook-yt-dl -f
+```
+- **Le verrou `/tmp/autodl.lock`** empêche deux téléchargements simultanés. S'il reste bloqué après un crash : `rm /tmp/autodl.lock`.
+
+Update yt-dl:
+```bash
+sudo yt-dlp -U
 ```
