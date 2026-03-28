@@ -40,11 +40,12 @@ Paramétré pour la meilleure qualité disponible (en .flac)
 
 --- 
 
-## Stacks:
-tydl.sh + tracknumber.sh + mmvar.sh + MusicMaker.sh sur Desktop
-ou
+# Stacks manuel depuis Desktop
+tydl.sh + tracknumber.sh + mmvar.sh + MusicMaker.sh
 
+Voir scripts individuels
 
+# Stack Automatique
 autodl.sh + webhook.py + webhook-yt-dl.service sur le serveur Navidrome:
 
 **Flux d'une requête :**
@@ -66,6 +67,10 @@ sudo wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /u
 sudo chmod +x /usr/local/bin/yt-dlp
 ```
 
+Activation du service systemd:
+```bash
+sudo systemctl enable --now webhook-yt-dl.service
+```
 
 
 ## Application mobile — HTTP Shortcuts (Android)
@@ -79,7 +84,14 @@ sudo chmod +x /usr/local/bin/yt-dlp
 5. **Trigger & Execution** : activer **"Include in share menu"**
 6. Sauvegarder
 
-**Utilisation :** depuis YT Music, Partager → HTTP Shortcuts → sélectionner le raccourci.
+**Utilisation :** depuis YT Music, Partager -> HTTP Shortcuts -> sélectionner le raccourci.
+
+## Reverse Proxy:
+```nginx
+location /apiytdl {
+    proxy_pass http://[SERVER_IP]:5055;
+}
+```
 
 ## Maintenance:
 Suivre les logs en temps réel :
