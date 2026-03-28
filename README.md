@@ -36,7 +36,9 @@ Script pour sourcer les variables de MusicMaker.sh
 Script simple pour téléchargement de vidéos et musiques Youtube/Youtube Music 
 Paramétré pour la meilleure qualité disponible (en .flac)
 
+### notifications.sh
 
+Contient des fonctions pour créer des appels via cURL vers le serveur ntfy
 
 --- 
 
