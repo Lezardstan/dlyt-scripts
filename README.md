@@ -9,7 +9,7 @@ Service HTTP minimal qui reçoit les requêtes et déclenche le script de télé
 #### webhook-yt-dl.service
 Service systemd pour faire tourner le webhook en permanence.
 
-#### MusicMaker.sh
+#### musicmaker.sh
 Script pour télécharger en local avec copie sur serveur de Musique
 
 #### mm.vars.sh
