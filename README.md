@@ -1,35 +1,28 @@
 # dlyt-scripts
 
-
 #### autodl.sh
 Script de téléchargement, conversion et organisation des fichiers sur le serveur.
-
 
 #### webhook.py
 Service HTTP minimal qui reçoit les requêtes et déclenche le script de téléchargement.
 
-
 #### webhook-yt-dl.service
 Service systemd pour faire tourner le webhook en permanence.
-
 
 #### MusicMaker.sh
 Script pour télécharger en local avec copie sur serveur de Musique
 
-
 #### mm.vars.sh
 Script pour sourcer les variables de MusicMaker.sh
 
-
 #### tracknumbers.sh
 Utilise les deux premiers chiffres du titre d'une musique en .flac et rajoute le numéro de la piste dans les métadonnées
-
 
 #### ytdl.sh
 Script simple pour téléchargement de vidéos et musiques Youtube/Youtube Music 
 Paramétré pour la meilleure qualité disponible (en .flac)
 
-### notifications.sh
+#### notifications.sh
 Contient des fonctions pour créer des appels via cURL vers le serveur ntfy
 
 --- 
@@ -41,7 +34,7 @@ Voir scripts individuels
 
 ---
 
-# Stack Automatique
+# Stack Automatique (/server/*)
 autodl.sh + notifications.sh + webhook.py + webhook-yt-dl.service sur le serveur Navidrome:
 
 **Flux d'une requête :**
