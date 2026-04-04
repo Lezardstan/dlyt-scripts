@@ -8,7 +8,7 @@
 # Les script suivants doivent être executables et trouvables par ce script.
 #   ytdl.sh
 #   tracknumber.sh
-#
+#   notifications.sh
 
 # Les différentes variables déclarées ici
 source mm.vars.sh
